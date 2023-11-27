@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_promos",
+  "info": {
+    "displayName": "Promo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "btnText": {
+      "type": "string"
+    },
+    "type": {
+      "type": "integer"
+    }
+  }
+}

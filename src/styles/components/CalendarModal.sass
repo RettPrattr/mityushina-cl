@@ -1,0 +1,362 @@
+.modalNotAvailable
+    font-size: 36px
+    font-weight: 300
+    text-align: center
+    
+.mainLink
+    color: $Main
+    text-decoration: underline
+    font-size: 24px
+    margin-top: 30px
+
+.mainLinkContainer
+    justify-content: center
+    align-items: center
+    
+@media (min-width: 801px)    
+    .modal
+        display: none
+        &.active
+            display: flex
+            position: fixed
+            left: 0
+            top: 0
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 100vh
+            background-color: RGBA(0,0,0,0.2)
+            color: $Main
+            z-index: 999999 !important
+            .modalContainer
+                position: relative
+                background-color: $Background
+                width: 82%
+                padding: 2.5% 3.5%
+                padding-bottom: 5%
+                &.result
+                    width: 800px
+                    height: 665px
+                .modalTitle
+                    font-size: 64px
+                    font-weight: 100
+                .heroImageModal
+                    margin-top: 40px
+                    img
+                        height: 185px
+                        width: 185px
+                        border-radius: 50%
+                .modalDataContainer
+                    margin-top: 35px
+                    &.resultData
+                        margin-top: 50px
+                    .modalData
+                        margin-top: 15px
+                        font-size: 24px
+                        font-weight: 400
+                        display: flex
+                        align-items: center
+                        span
+                            margin-left: 15px
+                        a
+                            color: $Main
+                            font-size: 24px
+                            font-weight: 400
+                .bottomText
+                    max-width: 80%
+                    font-size: 14px
+                    font-weight: 300
+                    margin-top: 25px
+                    white-space: pre-wrap
+                    line-height: 19px
+                    &.lessWidth
+                        max-width: 435px
+                .closeButton
+                    position: absolute
+                    top: 25px
+                    right: 25px
+                .dateChoiceText
+                    font-size: 32px
+                    font-weight: 100
+                    height: 64px
+                    position: relative
+                    span
+                        position: absolute
+                        bottom: 0
+                    .timeButtons
+                        button
+                            margin-top: 35px
+                            margin-right: 12px
+                            &:nth-last-child(1)
+                                margin-right: 0
+                    button
+                        font-size: 20px
+                        line-height: 28px
+                        font-weight: 300
+                        background: white
+                        color: $Main
+                        border: none
+                        border-radius: 20px
+                        padding: 3px 24px
+                        &:hover
+                            background: $Main
+                            color: $Background
+                        &.active
+                            padding: 3px 20px
+                            font-weight: 700
+                            color: $Background
+                            background: $Main
+                    .submitContent
+                        color: $Main
+                        font-weight: 300
+                        margin-top: 45px
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        &.resultMargin
+                            margin-top: 25px
+
+                .calendar
+                    margin-top: 30px
+                    margin-bottom: 20px
+                    .calendarTop
+                        display: flex
+                        justify-content: space-between
+                        font-size: 24px
+                        font-weight: 100
+                        line-height: 30px
+                        .dateButtons
+                            svg
+                                &:first-child
+                                    margin-right: 15px
+                    .calendarTable
+                        margin-top: 3px
+                        align-items: center
+                        justify-content: center
+                        table
+                            width: 100%
+                            text-align: center
+                            border-spacing: 0px 7px
+                            thead
+                                th
+                                    font-size: 24px
+                                    font-weight: 400
+                            tbody
+                                tr
+                                    font-size: 20px
+                                    font-weight: 300
+                                    td
+                                        padding: 0
+                                        .calendarDay
+                                            span
+                                                padding: 2px 12px
+                                            &.active
+                                                span
+                                                    padding: 2px 10px
+                                                    font-weight: 700
+                                                    color: $Background
+                                                    background: $Main
+                                                    border-radius: 15px
+                                            &.disable
+                                                color: #d0d0d0
+
+
+@media (min-width: 801px) and (max-width: 1367px)
+    .resultData
+        margin-top: 25px !important
+    
+    .modalContainer
+        height: 90% !important
+    
+    .modalTitle
+        font-size: 48px !important
+    .modalData
+        font-size: 18px !important
+    .heroImageModal
+        img
+            height: 120px !important
+            width: 120px !important
+    .dateChoiceText
+        font-size: 28px !important
+        height: 50px !important
+        button
+            font-size: 16px !important
+    
+    .timeButtons
+        button
+            margin-top: 20px !important
+    .submitContent
+        margin-top: 20px !important
+    .calendar
+
+        .calendarTable
+            table
+                thead
+                    th
+                        font-size: 18px !important
+                tbody
+                    tr
+                        font-size: 16px !important
+    .result
+        height: 80% !important
+        width: 70% !important
+
+
+@media (max-width: 800px)
+    .calendarWidget
+        span 
+            font-size: 14px
+            font-weight: 500
+            margin-left: 12.5%
+    .modal
+        color: $Main
+        padding: 40px 20px
+        display: none
+        &.active
+            display: flex
+        .modalContainer
+            .modalTitle
+                font-size: 40px
+                font-weight: 200
+            .modalDataContainer
+                margin-top: 15px
+                .modalData
+                    display: flex
+                    align-items: center
+                    line-height: 30px
+                    &:nth-child(even)
+                        margin: 7px 0px
+                    span
+                        font-size: 20px
+                        font-weight: 400
+                        margin-left: 15px
+                    a
+                        color: $Main
+                        font-size: 24px
+                        font-weight: 400
+            .dateChoiceText
+                margin-top: 25px
+                &.mobile
+                    margin-top: 0px
+                font-size: 30px
+                font-weight: 100
+                span
+                    font-size: 30px
+                    font-weight: 100
+                button
+                    font-size: 16px
+                    line-height: 19px
+                    font-weight: 200
+                    background: white
+                    color: $Main
+                    border: none
+                    border-radius: 20px
+                    padding: 10px 28px
+                    &.active
+                        padding: 10px 28px
+                        color: $Background
+                        background: $Main
+                .timeButtons
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    justify-content: center
+                    button
+                        width: 28%
+                        margin-top: 15px
+                        margin-right: 15px
+            .submitContent
+                display: flex
+                flex-direction: column
+                margin-top: 20px
+                .selectedData
+                    color: $Main
+                    margin-bottom: 10px
+                    display: flex
+                    align-items: center
+                    span
+                        font-size: 24px
+                        font-weight: 400
+                        line-height: 30px
+                        margin-left: 15px
+                button
+                    margin: 10px 0px
+                    width: 100%
+            .bottomText
+                margin-top: 15px
+                margin-left: 0px
+                margin-right: 0px
+                white-space: pre-wrap
+                max-width: 90%
+                font-size: 14px
+                font-weight: 300
+            .calendar
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                background: white
+                border-radius: 7px
+                padding: 10px
+                margin-top: 20px
+                margin-bottom: 10px
+                .calendarTop
+                    margin: 5px 0px 15px 0px
+                    padding: 0px 15px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    align-items: center
+                    width: 100%
+                    .dateButtons
+                        height: 100%
+                        display: flex
+                    .currentDate
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        font-size: 18px
+                        font-weight: 500
+                        select
+                            padding-bottom: 1px
+                            appearance: none
+                            -webkit-appearance: none
+                            -moz-appearance: none
+                            border: none
+                            outline: none
+                            cursor: pointer
+                            background: none
+                            font-size: 18px
+                            font-weight: 500
+                            color: $Main
+
+                .calendarTable
+                    width: 100%
+                    align-items: center
+                    justify-content: center
+                    table
+                        width: 100%
+                        text-align: center
+                        font-size: 16px
+                        line-height: 19px
+                        border-spacing: 0px 5px
+                        thead
+                            th
+                                font-weight: 500
+                            tr
+                                :nth-last-child(-n+2)
+                                    font-weight: 300
+                        tbody
+                            td
+                                padding: 0
+                                .calendarDay
+                                    span
+                                        display: inline-block
+                                        border: 2px solid white
+                                        padding: 4px 7px
+                                    &.active
+                                        span
+                                            border: 2px solid #FFDA70
+                                            border-radius: 100px
+                                    &.disable
+                                        color: #d0d0d0

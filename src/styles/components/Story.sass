@@ -1,0 +1,154 @@
+
+
+.story
+    .photoWrapper
+        margin-top: 5%
+    .subtitle
+        margin-top: 5%
+    p
+        opacity: 0.69
+
+.story-1
+    .subtitle 
+        margin-top: 5px
+.story-2
+    .two-angles-border
+        border-top-right-radius: $baseRadius
+        border-bottom-right-radius: $baseRadius
+    .left-side
+        padding-left: 0
+
+
+.story-4
+    .right-align
+        text-align: right
+    &.none
+        display: none !important
+    a
+        &:hover
+            opacity: .69
+    p, div, a
+        font-size: 28px
+        font-weight: 300
+    .text
+        z-index: 0
+    .cy-1
+        left: -15px
+    .cy-2
+        left: 128px
+    .customYear
+        z-index: -1 !important
+        position: absolute
+        top: -45px
+        span
+            font-size: 80px
+            font-weight: 500
+            color: $White
+    img 
+        // margin-bottom: 3%
+        height: auto !important
+
+
+
+
+// Reverse setup
+.story.reverse
+    flex-direction: column-reverse !important
+    .container 
+        flex-direction: row-reverse
+.story-1.reverse
+    .text
+        margin-top: 3%
+.story-4.reverse 
+    .text
+        // margin-bottom: 5%
+.story-5.reverse
+    .text
+        padding: 50px
+
+.story-6
+    padding: 70px 0 !important
+
+    @media (min-width: 801px)
+        .storyText-6
+            width: 120%
+    .bottom
+        height: 520px
+    .text
+        p
+            font-size: 32px
+            font-weight: 200
+
+@media (min-width: 1550px)
+    .story-6
+        height: 800px !important
+
+// Mobile styles
+@media (max-width: 800px)
+    .story-2
+        .left-side 
+            padding-right: 0
+            img
+                border-radius: 0 !important
+        p 
+            padding: 0 !important
+    .story-4
+        background-color: $Main
+        .customYear
+            display: none
+        a
+            font-size: 16px
+            color: $Yellow
+            text-decoration: underline
+        div, p
+            color: $Background
+            font-size: 16px
+    .story-5
+        .container
+            flex-direction: column-reverse
+        
+        &.reverse
+            .text
+                padding: $basePadding 0px 
+    .story6
+        top: 30px !important
+    .story-6
+        padding: 0px 0px 50px 0px !important
+        margin-top: 20px
+        .story6Col
+            flex: 1 1 270px
+            width: 54% !important
+            padding-left: 20px !important
+            //padding-top: 20px !important
+            margin-top: -30px 
+            @media (max-width: 374px)
+                margin-top: -40px !important
+        .storyText-6
+            margin-bottom: 45px !important
+        .bottom
+            height: 300px !important
+        .personImage
+            margin-right: 10px
+        .text
+            p
+                font-size: 14px
+                font-weight: 300
+
+@media (max-width: 321px)
+    .story-6
+        .story6Col
+            padding-left: 45px !important
+
+
+
+@media (min-width: 400px) and (max-width: 800px)
+    .story-6
+        .story6Col
+            flex: 1 1 270px
+            padding-left: 5px !important
+
+@media (min-width: 420px) and (max-width: 800px)
+    .story-6
+        .story6Col
+            flex: 1 1 330px
+            padding-left: 20px !important

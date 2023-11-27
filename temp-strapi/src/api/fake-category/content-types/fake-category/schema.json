@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fake_categories",
+  "info": {
+    "singularName": "fake-category",
+    "pluralName": "fake-categories",
+    "displayName": "Fake-category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

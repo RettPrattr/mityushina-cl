@@ -1,0 +1,109 @@
+.tabs
+	height: fit-content
+	.shadow
+		width: 150%
+		left: -25%
+		box-shadow: 0px 40px 130px 0px rgba(0, 0, 0, 0.5) inset, 0px -40px 130px 0px rgba(0, 0, 0, 0.5) inset
+	margin-top: 60px
+	margin-bottom: 60px
+	.tabsItems-container
+		flex-wrap: wrap
+		margin-bottom: 20px
+		margin-top: 20px
+		.tabItem
+			color: #fff
+			height: 50vh
+			overflow: hidden
+			margin-bottom: $basePadding * 2
+			.bc
+				img
+					overflow: visible
+
+			.top-content, .bottom-content
+				.dot
+					display: inline-block
+					content: ''
+					margin: 7px 8px
+					height: 7px
+					width: 7px
+					border-radius: 1000px
+					background-color: $Main
+					z-index: 100
+					
+			.optionalProps, .top-content
+				& > div:last-child > .dot
+					display: none
+				
+			// .top-content:last-child
+			// 	.div:last-child
+			// 		display: none
+
+
+
+.tabs-content-reverse
+	align-items: center
+	.photo50
+		width: calc(50% - 40px)
+		height: 400px
+	.text50
+		width: 50%
+		margin-right: 40px
+
+.tabs-content
+	align-items: center
+	.photo50
+		width: 50%
+		margin-right: 40px
+		height: 400px
+	.text50
+		width: calc(50% - 40px)
+
+.tabs-nav
+	display: flex
+	width: 100%
+	align-items: center
+	list-style: none
+	padding: 0px
+	position: relative
+	li
+		&.w-mob
+			// width: 150px
+		.tabs-button
+			padding: 5px
+			display: block
+			position: relative
+			border: none
+			outline: none
+			cursor: pointer
+		.tabs-button::after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0px
+			height: 1px
+			width: 100%
+			background-color: $Gray
+			transition: all 0.2s ease-out
+			// opacity: 1
+			z-index: 2
+			border-radius: 10px
+		.tabs-button.active::after
+			height: 2px
+			background-color: $Main
+	li:not(:last-child)
+			margin-right: 20px
+
+@media (max-width: 1000px)
+
+	.tabs
+		.tabs-item
+			margin-bottom: 5px
+		margin-top: 20px
+		margin-bottom: 20px
+		.optionalProps 
+			flex-wrap: wrap
+		.tabItem
+			height: 255px !important
+			img
+				height: 100%

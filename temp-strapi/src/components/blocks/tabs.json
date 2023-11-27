@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_tabs",
+  "info": {
+    "displayName": "Tabs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tabsDataPath": {
+      "type": "string"
+    },
+    "tabsCategoriesPath": {
+      "type": "string"
+    },
+    "type": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.bothering
+    .description
+        p
+            font-weight: 300
+            font-size: 16px
+            color: $Main
+        
+    .left-side, .right-side
+        padding-left: 0 !important
+        padding-right: 0 !important
+    .right-side
+        width: min-content 
+    .description
+        width: 25%
+        @media (min-width: 801px)
+            margin-right: 80px
+            padding-top: 20px
+    .botheringItems
+        width: 75%
+        .botheringItem
+            margin: 8px
+            cursor: pointer
+            &.active
+                background-color: $Main !important
+                color: $White !important
+            @media(min-width: 801px)
+                &:hover
+                    background-color: $Yellow          
+    .circleDiv
+        height: 258px
+        width: 258px
+        border-radius: 1000px
+        background-color: $Main
+        p
+            width: 80%
+            color: $White
+            font-weight: 300
+            font-size: 14px
+            margin-left: 20px
+
+@media (max-width: 800px)
+    .bothering
+        padding: 40px 20px 0px 20px !important
+        .description
+            width: 100%
+            p
+                font-size: 18px !important
+        .botheringItems
+            width: 100%
+            .contextItem
+                padding: 8px 20px !important
+                margin: 6px !important
+                
+        .right-side
+            width: 100% !important 
+
+        .consultationLink
+            margin-top: 10px
+            border: 1px solid $Main
+            border-radius: 1000px
+            width: 100%
+            a
+                padding-top: 19px
+                padding-bottom: 19px
+                border-bottom: 0
+                width: 100%
+                text-align: center
+             
+
+.consultationButton
+    position: relative
+    margin-top: 10px
+    background-color: $Main
+    border-radius: 1000px
+    margin-bottom: 8px
+    &:hover
+        background-color: $Yellow !important
+        a
+            color: $Main !important
+    a
+        color: $Background
+        padding-top: 12px
+        padding-bottom: 12px

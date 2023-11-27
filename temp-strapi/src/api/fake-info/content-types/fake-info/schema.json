@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fake_infos",
+  "info": {
+    "singularName": "fake-info",
+    "pluralName": "fake-infos",
+    "displayName": "FakeInfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "descriptionRich": {
+      "type": "richtext"
+    },
+    "fake_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fake-category.fake-category"
+    }
+  }
+}

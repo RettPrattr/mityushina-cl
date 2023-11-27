@@ -1,0 +1,66 @@
+.questions
+    @media (min-width: 801px)
+        margin-top: 40px
+    .title
+        margin-bottom: 30px
+    p, span
+        color: $Main
+    .questionItems
+        padding-left: 0 !important
+        padding-right: 0 !important
+        .questionItem
+
+            border-bottom: 1px solid $Main
+            .show-hide
+                display: flex
+                &.hidden
+                    display: none
+
+    
+
+        .question
+            p
+                font-weight: 400
+                font-size: 24px
+                margin-bottom: 20px
+        .plus-or-minus
+            svg
+                width: 20px
+            .plus, .minus
+                display: none
+                &.active
+                    display: block
+        .line
+            // display: none
+            width: 100%
+            height: 1px
+            background-color: $Main
+            &.active 
+                display: inline-block
+                margin-top: 25px
+        .answer
+            display: none
+            margin-bottom: 15px
+            p
+                font-size: 16px
+                font-weight: 300
+            &.active
+                display: block
+
+    .moreBtn
+        cursor: pointer
+        div.open
+            transform: rotate(180deg)
+        p
+            font-weight: 300
+            font-size: 24px
+
+
+@media (max-width: 800px)
+    .questions
+
+        .question
+            p
+                font-size: 22px !important
+        .plus-or-minus
+            margin-top: 3px

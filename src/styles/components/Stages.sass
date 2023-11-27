@@ -1,0 +1,112 @@
+.stages
+    overflow: hidden
+    .switchBtn-container
+        background-color: $Main
+        border-radius: 1000px
+        width: 180px
+        height: 45px
+        padding: 0 5px
+        cursor: pointer
+        .switchIcon
+            width: 100%
+            div
+                // background-color: $White
+                // color: $Main
+                outline: none
+                width: 100% !important
+                .switched-off
+                    background-color: transparent
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    
+                    p
+                        color: $White !important
+                .switched-on
+                    background-color: $White !important
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 8px 13px
+                    border-radius: 1000px
+                    p
+                        color: $Main !important
+    .stages-container
+        width: 100%
+    .stageItem
+        background-color: $White
+        color: $Main
+        border-radius: 20px
+        padding: 28px
+        cursor: pointer
+        .stageArrow
+            
+            &.open
+                transform: rotateX(180deg)
+                svg
+        .texts
+            display: none
+            &.active
+                display: flex
+            .text
+                font-weight: 300
+                font-size: 16px
+            .remarkText
+                .remarkSvg
+                    width: 11px !important
+                    svg
+                        width: 60%
+                p
+                    margin-top: 3px
+                    font-weight: 300
+                    color: $Main
+                    font-size: 12px
+                    line-height: 1.5
+        .number
+            width: 10%
+            font-weight: 300
+            font-size: 16px
+        .name-container
+            width: 35%
+            p
+                font-weight: 400
+                font-size: 24px
+        .info
+            width: 55%
+            .infoDuration
+                margin-bottom: 3px
+            p
+                font-weight: 300
+                font-size: 16px
+
+
+@media (max-width: 800px)
+    .stages
+        .stageItem
+            padding: 24px 
+            .info
+                p
+                    font-weight: 400
+                    font-size: 16px
+            .number, .name-container, .info
+                width: 100% !important
+
+            .name-container
+                .number
+                    font-weight: 500
+                    font-size: 14px
+                svg
+                    margin-top: 4px
+
+            .name
+                font-weight: 400
+                font-size: 20px
+
+            .description
+                font-weight: 400
+                font-size: 14px
+        
+@media (min-width: 1600px)
+    .stages
+        .name-container
+            width: 33% !important

@@ -1,0 +1,121 @@
+.brandFooter
+    padding: 70px 0 !important
+    display: flex
+    align-items: flex-start
+    background-color: $Main
+    z-index: 1 !important
+    .websiteText
+        margin: 0 !important
+    .layoutLinks
+        p
+            cursor: pointer
+            &:hover
+                opacity: .69
+    .container
+        .footerCol
+            height: 252px
+            .madeBy
+                img
+                    margin-left: 5px
+                    width: 70px !important
+                    object-fit: contain !important
+                    position: relative
+                    top: 1px
+    a:not(.instLink), p
+        color: $Background
+        margin: 12px 0
+    .link 
+        cursor: pointer
+        &:hover
+            opacity: .69
+    a
+        cursor: pointer
+        &:hover
+            color: $Yellow
+    .logo
+        height: fit-content
+        max-height: 47px
+        img
+            width: 250px
+    .instLink
+        margin: 12px 25px 12px 0
+    .tgLink
+        position: relative
+        top: 2px
+    .footerCol-1
+        position: relative
+        .bottomText
+            position: absolute
+            bottom: -12px
+            width: 132%
+            margin-top: 0 !important
+            margin-bottom: 0 !important
+            p
+                font-size: 14px !important
+                color: rgba(246, 243, 236, 0.5)
+                margin: 0 !important
+    .consultationButton
+        margin: 0
+        right: 24px
+        border: 1px solid $Yellow
+        @media (max-width: 800px)
+            width: 100%
+            margin: 12px 0px
+            right: 0
+        &:hover
+            border: 1px solid $Yellow
+        a
+            color: $Yellow
+            margin: 0
+            padding: 10px 24px
+    .checkboxLabel a
+        color: $Main
+@media (max-width: 800px)
+    .brandFooter
+        padding: 15px !important
+        .bottomText
+            margin-top: 20px !important
+            margin-bottom: 15px !important
+            p
+                font-size: 12px
+                color: rgba(246, 243, 236, 0.5)
+                margin: 0 !important
+                
+        .rights
+            p
+                margin-bottom: 0 !important
+        .footerCol
+            width: 100%
+            height: fit-content !important
+        .logo
+            width: 100% !important
+            a 
+                width: 100% !important
+            img
+                height: auto
+                width: 100% !important
+
+        .layoutLinks
+            display: none
+
+        .agreementAndPolicy
+            margin-bottom: 20px 
+            a
+                margin-bottom: 4px !important
+
+        .madeBy
+            margin-top: 20px
+            opacity: .8
+            img
+                top: 0 !important
+        .container
+            // .footerCol-1
+            //     order: 4
+            // .footerCol-2
+            //     order: 3
+            // .footerCol-3
+            //     order: 1
+            // .footerCol-4
+            //     order: 2
+            // .footerCol
+            //     height: fit-content

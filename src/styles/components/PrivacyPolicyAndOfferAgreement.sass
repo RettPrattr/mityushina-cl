@@ -1,0 +1,114 @@
+@media (min-width: 801px)
+    .offersContainer
+        color: $Main !important
+        margin: 50px 10% 300px
+
+    .menuContainer
+        padding-top: 10px
+        .menu
+            border: 1px solid $Main
+            border-radius: 20px
+            max-width: 240px
+            max-height: 138px
+            overflow: hidden
+            a
+                width: 100%
+            .menuItem
+                font-size: 16px
+                font-weight: 300
+                padding: 20px
+                &.activeTop
+                    border-bottom: 1px solid $Main
+                    border-radius: 20px 20px 0px 0px
+                    background-color: $Yellow
+                &.activeBottom
+                    border-top: 1px solid $Main
+                    border-radius: 0px 0px 20px 20px
+                    background-color: $Yellow
+
+    .content
+        margin-left: 10%
+        max-width: 715px
+        //max-width: 50%
+        .contentTitle
+            font-size: 32px
+            font-weight: 200
+            line-height: 38px
+            margin-bottom: 15px
+            max-width: 500px
+        .contentText
+            p
+                font-size: 16px
+                font-weight: 300
+                color: $Main
+                line-height: 19px
+                margin-top: 10px
+            ul
+                margin-top: 10px
+                padding-left: 30px
+                li
+                    p
+                        padding: 0
+                        margin: 0
+                    margin: 0
+                    padding: 0
+            .numberList
+                .price
+                    padding-left: 16px
+
+            .textTitle
+                p
+                    margin-top: 0
+                    margin-bottom: 15px
+            .contentItem
+                margin-bottom: 40px
+                &:first
+                    margin-top: 0
+
+@media (max-width: 800px)
+    .offersContainer
+        color: $Main !important
+        margin: 35px 20px 200px
+    
+    .content
+        max-width: 100%
+        .contentTitle
+            font-size: 20px
+            font-weight: 700
+            line-height: 28px
+        .contentText
+            p
+                margin-top: 10px
+                font-size: 16px
+                font-weight: 300
+                color: $Main
+                line-height: 19px
+            .numberList
+                .price
+                    padding-left: 16px
+            ul
+                list-style-type: none
+                margin-top: 10px
+                padding-left: 10px
+                li
+                    display: flex
+                    p
+                        padding: 0
+                        margin: 0
+                    margin: 0
+                    padding: 0
+                    &::before
+                        content: "•"
+                        font-size: 8px
+                        margin-right: 10px
+                        padding-top: 4px
+
+            .textTitle
+                p
+                    margin-top: 10px
+                    margin-bottom: 15px
+            .contentItem
+                padding: 0px 2px 0px
+                margin-bottom: 40px
+                &:first
+                    margin-top: 0

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_blocks_abouts",
+  "info": {
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "additional": {
+      "type": "richtext"
+    },
+    "pointContent": {
+      "displayName": "pointContent",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.point-content"
+    },
+    "type": {
+      "type": "integer"
+    }
+  }
+}

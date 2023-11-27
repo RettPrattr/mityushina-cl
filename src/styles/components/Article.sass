@@ -1,0 +1,124 @@
+.article
+    .allArticlesLink
+        text-decoration: underline
+        padding-left: 30px
+        transition: .3s all ease
+        a
+            color: $Main
+            &:hover 
+                color: $Yellow
+    .bottomInfo
+        p
+            font-weight: 300
+            font-size: 14px
+        .views
+            margin-right: 3px
+    p, div
+        color: $Main
+    .left-side, .top, .bottom
+        border-radius: 20px
+        background-color: $White
+        padding: 30px
+    .left-side
+        width: calc(75% - 40px)
+        margin-right: 40px
+    .top
+        height: fit-content
+        @media (max-width: 800px)
+            gap: 10px
+        gap: 10px
+        p, a
+            font-weight: 300
+            font-size: 20px
+        a
+            text-decoration-line: underline
+            color: $Main
+            &:hover
+                opacity: .69
+        .dateSpan
+            font-size: 16px
+            @media (min-width: 801px)
+                font-size: 20px
+                margin-top: 10px
+            font-weight: 300
+    .right-side
+        width: 25%
+        .bottom
+            img
+                width: 60px
+                height: 60px
+            p
+                font-weight: 300
+                font-size: 22px
+    .highlightedText
+        background-color: $Yellow
+        padding: 30px 20px
+        border-radius: 20px
+        p, div, a
+            color: $Main
+            font-weight: 500
+            font-size: 24px
+    .text
+        p, div
+            font-weight: 400
+            font-size: 20px
+        @media (min-width: 801px)
+            h1
+                font-size: 28px !important
+            h2
+                font-size: 26px !important
+            h3
+                font-size: 24px !important
+            h4
+                font-size: 22px !important
+        @media (max-width: 800px)
+            h1
+                font-size: 26px !important
+            h2
+                font-size: 24px !important
+            h3
+                font-size: 22px !important
+            h4
+                font-size: 20px !important
+        strong
+            font-weight: 500 !important
+
+    .imageWithText
+        p, div
+            font-size: 14px
+            font-weight: 300
+            line-height: 1.5
+
+
+.image-margin
+    .image
+        @media (min-width: 801px)
+            margin: 15px
+        @media (max-width: 801px)
+            &:not(:first-child)
+                margin-top: 15px
+
+@media (max-width: 800px)
+    .article
+        padding-left: 10px !important
+        padding-right: 10px !important
+        .allArticlesLink
+            a
+                font-size: 18px !important
+        .top
+            width: 100%
+            a
+                font-size: 16px !important
+                font-weight: 300
+        padding-top: 0 !important
+        .highlightedText
+            p, div, a
+                font-size: 14px !important
+        .left-side, .right-side
+            width: 100%
+        .text
+
+            p
+                max-width: 100% !important
+                font-size: 18px
+        

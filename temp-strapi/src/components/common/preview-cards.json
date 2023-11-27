@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_common_preview_cards",
+  "info": {
+    "displayName": "PreviewCards"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "json"
+    },
+    "date": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "weekday": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "start": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

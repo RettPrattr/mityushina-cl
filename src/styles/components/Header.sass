@@ -1,0 +1,221 @@
+/// HEADER
+
+
+.header
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0 
+    transition: all .2s linear
+    background: $Background
+    z-index: 900000
+    .desk-logo
+        width: 290px
+        max-height: 30px
+        & > div
+            width: 100%
+    &.down
+        top: 0
+    & > div
+        padding: 10px 60px
+    .layoutLinks
+        p, a
+            cursor: pointer
+        .layoutLink.mr0
+            margin: 13px 5px
+            padding: 7px 2px 7px 12px !important
+        .blogLink
+            position: relative
+            &::after
+                display: inline-block
+                content: url(/images/blog-vector.svg)
+                position: absolute
+                right: -10px
+            svg
+                margin-left: 0
+                padding-left: 0
+            // &:hover
+            //     border-radius: 1000px
+            //     background-color: $Yellow
+            //     padding: 5px 23px 5px 12px !important
+            //     &::after
+            //         right: 8px
+            // &.active
+            //     border-radius: 1000px
+            //     background-color: $Yellow
+            //     padding: 5px 23px 5px 12px !important
+            //     opacity: 1 !important
+            //     &::after
+            //         right: 8px
+            // &.active
+            //     padding: 0 !important
+            //     margin: 0 !important
+            //     border-radius: 1000px
+                
+            //     background-color: $Yellow
+            //     a, svg
+            //         padding: 0 !important
+            //         margin: 0 !important
+
+
+        .layoutLink
+            margin: 13px 5px
+            padding: 7px 12px
+            position: relative
+            width: max-content
+            font-weight: 300
+            &:hover
+                border-radius: 1000px
+                background-color: $Yellow
+                opacity: 1 !important
+            &.active
+                border-radius: 1000px
+                background-color: $Yellow
+        .layoutLink-container
+            margin: 13px 5px
+            padding: 7px 22px 7px 12px
+            position: relative
+            width: max-content
+            font-weight: 300
+            .layoutLink
+                margin: 0 !important
+                padding: 0 !important 
+            &:hover
+                background-color: $Yellow
+                border-radius: 1000px
+            &.active
+                background-color: $Yellow
+                border-radius: 1000px
+    .logo
+        max-height: 70px
+        width: 100% !important
+        a 
+            width: 100% !important
+
+    .logo-svg
+        height: 58px !important
+        padding: 10px 0
+        transition: all .2s linear
+    .m-mob
+        margin-bottom: 15px
+    // &.down
+    //     top: -200px
+    .bar
+        display: block
+        width: 30px
+        height: 2px
+        margin-bottom: 7px
+        background: $Black
+
+    .burger
+        display: block
+        outline: 0
+        border: 0
+        overflow: visible
+        background: none
+        color: #000
+        margin-top: 4px
+        span
+            transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+            background-color: $Main
+        &:focus
+            border: medium none rgb(111, 255, 176)
+            box-shadow: rgb(111, 255, 176) 0 0 2px 2px
+            outline: 0
+        &.active
+            span:nth-of-type(1)
+                transform: rotate(40deg) translate(6px, 8px)
+                width: 30px
+            span:nth-of-type(2)
+                opacity: 0
+                pointer-events: none
+            span:nth-of-type(3)
+                transform: rotate(-40deg) translate(5px, -6px)
+                width: 30px
+    .logo-mobile
+        display: none !important
+    .header-top
+        background: #fff
+    .info
+        // width: 50%
+    a
+        font-weight: 400
+        transition: all 0.2s ease-out
+        &:hover
+            opacity: 0.69
+
+    .header-bottom
+        a, p
+            cursor: pointer
+            color: black
+            transition: all 0.2s ease-out
+            &:hover
+                opacity: 0.69
+
+
+
+@media (min-width: 1001px) and (max-width: 1200px)
+    .consultationLink
+        a
+            font-size: 14px !important
+
+@media(max-width: 1000px)
+    .header
+        p
+            color: $Background
+        padding: 10px 0 0 0
+        height: fit-content
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        overflow: hidden
+        & > div
+            padding: 10px 20px !important
+        &.active
+            background-color: $Main
+            a
+                color: $Background
+            .burger
+                color: $Background
+                span
+                    background-color: $Background
+        .logo
+            width: 75% !important
+            img
+                object-fit: contain !important
+        .layoutLinks
+            display: none
+            .layoutLink
+                margin-top: 6px !important
+                margin-bottom: 6px !important
+                font-size: 16px
+                font-weight: 300
+            .blogLink
+                &::after
+                    content: url(/images/white-arrow.svg)
+                    right: 0px
+            .layoutLink-container
+                padding: 7px 12px 7px 12px
+            &.active
+                display: flex
+                flex-direction: column
+                align-items: center
+                // margin-bottom: 20px
+        .consultationLink
+            margin-top: 20px
+            a
+                border-bottom: 1px solid $Background
+                font-size: 16px 
+                font-weight: 400
+    .header-bottom
+        display: none
+        a, p
+            font-size: $baseFontSize * 1.4
+            color: black !important
+            z-index: 1000
+        &.active
+            display: flex
+            flex-direction: column
+            background-color: $White
+            color: $Black

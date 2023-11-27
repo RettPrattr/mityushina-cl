@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_tiny_footers",
+  "info": {
+    "displayName": "TinyFooter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text1": {
+      "type": "richtext"
+    },
+    "text2": {
+      "type": "richtext"
+    },
+    "text3": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "integer"
+    }
+  }
+}

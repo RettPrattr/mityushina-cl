@@ -1,0 +1,102 @@
+.work
+    overflow: hidden
+    @media (min-width: 801px)
+        margin-top: 40px
+    .bcSvg
+        top: 90px
+        right: 0px
+        z-index: -1
+        width: 300px
+        height: 300px
+    .thereisItems
+        grid-template-columns: repeat(6, 19%)
+        // grid-template-rows: repeat(6, 12%)
+        column-gap: 14px
+        overflow: hidden
+        // display: flex
+        // flex-direction: row
+        height: fit-content
+        width: 100%
+        .thesisItem
+            background-color: $White
+            border-radius: 20px
+            padding: 32px 24px
+            height: fit-content
+            .name
+                font-weight: 400
+                font-size: 24px
+            .description
+                font-weight: 300
+
+            p
+                color: $Main
+                font-size: 14px
+        .thesisItem-1
+            // margin-right: 40px
+            grid-auto-rows: min-content
+            grid-row: 1/6
+            grid-column: 1/3
+        .thesisItem-2
+            grid-row: 2/6
+            // align-items: end
+            grid-column: 3/6
+
+        .points
+            .point
+                width: 8px
+                height: 8px
+                background-color: $Main
+                border-radius: 1000px
+                margin-right: 10px
+                margin-top: 6px
+            .pointText
+                @media (min-width: 801px)
+                    max-width: 48vw
+                font-size: 16px
+                font-weight: 300
+        // .thesisItem-4
+        //     grid-column: 3/6
+        // .thesisItem-2, .thesisItem-3
+        //     grid-column: 4/6
+        // .thesisItem-5, .thesisItem-6
+        //     grid-column: 1/3
+        // .thesisItem-1
+        //     grid-row: 1/3
+        // .thesisItem-4
+        //     grid-row: 3/5
+
+
+@media (min-width: 1320px)
+    .work
+        .title2
+            margin-left: 90px
+
+@media(max-width: 1000px)
+    .work
+        .title
+            margin-bottom: 15px !important
+        .points
+            &.show-hide
+                display: flex
+                &.hidden
+                    display: none
+
+        .thesisItem
+            background-color: $White
+            border-radius: 10px
+            padding: 28px 24px
+            margin-bottom: 10px
+            .moreBtn
+                cursor: pointer
+                div.open
+                    transform: rotate(180deg)
+                p
+                    font-weight: 300
+                    font-size: 24px
+        
+
+@media (min-width: 1600px)
+    .work
+        .bcSvg
+            top: 60px !important
+            right: 40px !important

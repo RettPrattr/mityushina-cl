@@ -1,0 +1,48 @@
+a 
+    text-decoration: none
+    font-size: $baseFontSize * $aResize
+    cursor: pointer
+    font-weight: 400
+    width: fit-content
+
+input, label
+    font-size: $baseFontSize
+    font-weight: 500
+
+p 
+    font-weight: 400
+    font-size: $baseFontSize * $pResize
+    width: fit-content
+h1
+    font-size: $baseFontSize * $h1Resize
+    font-weight: 400
+h2 
+    font-weight: 200
+    font-size: 64px
+    color: $Main
+    // margin-bottom: 0.5em
+h3 
+    font-size: $baseFontSize * $h3Resize
+    font-weight: 400
+    margin-bottom: 1em
+h4 
+    font-size: $baseFontSize * $h4Resize
+    // text-transform: uppercase
+    font-weight: 400
+    margin-bottom: 0.5em
+strong
+    font-weight: 400 !important
+.btn
+    font-size: $baseFontSize * $btnResize
+
+@media (max-width: 800px)
+    a, p, input, label, div, span
+        font-size: $baseFontSize - 2px
+    h1
+        font-size: $baseFontSize * 1.75
+    h2
+        font-size: 32px !important
+    h3
+        font-size: $baseFontSize * 1.2
+    h4  
+        font-size: $baseFontSize

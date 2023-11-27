@@ -1,0 +1,39 @@
+.heroBlog
+
+    .search
+        width: 185px
+        background-color: $White
+        color: $Main
+        padding: 12px 12px
+        border-radius: 30px
+        input
+            border: 0
+            margin-left: 10px
+            overflow: visible
+            width: 100%
+
+    .categoryItem
+        width: max-content
+        &.active
+            background-color: $Main
+            color: $White
+            &:hover
+                background-color: $Main
+                p, a
+                    color: $White
+        // &:hover
+        //     background-color: $Main
+        //     color: $Background
+        
+
+@media(max-width: 1000px)
+    .heroBlog
+        padding-left: 10px !important
+        padding-right: 10px !important
+        padding-bottom: 0 !important
+        .searchClose
+            width: 25px !important
+            height: 25px !important
+        .search
+            padding: 4px 12px !important
+            width: 100%

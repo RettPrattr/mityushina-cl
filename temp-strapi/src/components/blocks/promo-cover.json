@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_blocks_promo_covers",
+  "info": {
+    "displayName": "PromoCover",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "slides": {
+      "displayName": "slides",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.slides"
+    },
+    "type": {
+      "type": "integer"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

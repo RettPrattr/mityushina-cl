@@ -1,0 +1,133 @@
+.publications
+    .no-text-decoration
+        text-decoration: none !important
+    .title
+        margin-bottom: 0 !important
+        z-index: 0 !important
+    .svgBlock3
+        z-index: 1 !important
+        height: 100vh !important
+    p, a
+        color: $Main
+    .content-container
+        z-index: 0 !important
+        padding-top: 12%
+    .left-side
+        // margin-right: 100px
+        .subtitle
+            margin-bottom: 0px
+            h4
+                font-weight: 200
+                font-size: 32px
+        .topics
+            @media (max-width: 800px)
+                padding-left: 15px
+            .text, .topicText
+                font-weight: 300
+                font-size: 16px
+                z-index: 1000
+            
+        .photo
+            margin-bottom: 80px
+            width: 226px
+            height: 304px
+    a
+        // border-bottom: 1px solid $Main
+        text-decoration-line: underline
+        color: $Main
+        &:hover
+            opacity: .69
+    .point
+        width: 12px
+        height: 12px
+        background-color: $Main
+        border-radius: 1000px
+        margin-right: 12px
+        margin-top: 6px
+        display: inline-block
+    .right-side
+        z-index: 2 !important
+        .right-side-block  
+            // padding-left: 0
+            // padding-right: 0
+            .subtitle
+                font-weight: 400 
+                font-size: 20px
+            .description
+                font-weight: 300
+                font-size: 14px
+            background-color: $White
+            color: $Main
+            border-radius: 20px
+            padding: 28px
+
+
+@media (min-width: 1001px) and (max-width: 1200px)
+    .right-side
+        padding-top: 80px !important
+    .left-side
+        padding-bottom: 70px !important
+    
+@media (max-width: 800px)
+    .publications
+        padding-left: 0 !important
+        padding-right: 0 !important
+        .title
+            padding-left: 20px !important
+        .left-side
+            padding-right: 20px !important
+            margin-top: 40px !important
+            margin-bottom: 40px !important
+            .point
+                width: 8px !important
+                height: 8px !important
+                margin-left: 0 !important
+                margin-right: 5px !important
+                display: inline-block
+            .topics
+                .text, .topicText
+                    font-size: 12px !important
+                .topicText
+                    a
+                        font-weight: 300
+                        font-size: 12px !important
+                        text-decoration: underline
+            .photo
+                margin-bottom: 0px !important
+                // width: 100%
+                width: 50%
+                height: 270px !important
+                img
+                    object-fit: cover
+                    width: 100%
+                    height: 100% !important
+        .right-side
+            padding-right: 20px !important
+            padding-left: 20px !important
+
+            .mobSourceLink
+                text-decoration: none !important
+            .right-side-block
+                padding: 24px 16px !important
+                height: 165px
+                // &.show
+                //     height: stretch !important
+                //     width: 100% !important
+                //     .description
+                //         overflow: visible
+                .subtitle
+                    font-weight: 500 !important
+                    font-size: 14px !important
+                .description
+                    font-size: 12px !important
+                    // height: 100px
+                    margin: 0
+                    -webkit-line-clamp: 5
+                    display: -webkit-box
+                    -webkit-box-orient: vertical
+                    overflow: hidden
+
+
+@media (min-width: 1600px)
+    .content-container 
+        padding-top: 25% !important

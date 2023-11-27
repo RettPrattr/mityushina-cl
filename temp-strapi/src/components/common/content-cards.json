@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_common_content_cards",
+  "info": {
+    "displayName": "ContentCards"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "category": {
+      "type": "json"
+    },
+    "date": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "weekday": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "start": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

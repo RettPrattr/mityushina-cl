@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_preview_cards",
+  "info": {
+    "displayName": "PreviewCards",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "previewCards": {
+      "displayName": "PreviewCards",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.preview-cards"
+    },
+    "type": {
+      "type": "integer"
+    }
+  }
+}

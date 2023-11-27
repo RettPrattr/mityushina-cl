@@ -1,0 +1,73 @@
+.rates
+    flex-wrap: nowrap !important
+    // padding: 0 !important
+    p, span, a
+        color: $Main
+    .rate-item
+        width: calc(33.33% - 50px)
+        background-color: $White
+        border-radius: 30px
+        padding: 32px 24px 
+        &:hover
+            background-color: $Yellow
+        &.ratesActive
+            background-color: $Yellow
+        .subtitle
+            @media (max-width: 800px)
+                white-space: pre-wrap
+            margin-bottom: 50px
+            font-size: 20px
+        .duration-container
+            margin-bottom: 85px
+            p
+                font-size: 14px
+                font-weight: 300
+                margin-bottom: 8px
+            .duration
+                font-size: 16px
+                font-weight: 400
+        .price
+            margin-bottom: 25px
+            p
+                font-weight: 700
+                font-size: 32px
+        .chooseButton
+            // margin-top: 35px
+            border: 2px solid $Main
+            border-radius: 1000px
+            &:hover
+                background-color: $Main
+                p
+                    color: $White
+            p
+                padding-top: 12px
+                padding-bottom: 12px
+        // padding-left: 0 !important
+        // padding-right: 0 !important
+
+@media (max-width: 800px)
+    ::-webkit-scrollbar 
+        display: none !important
+        width: 0 !important
+    .rates
+        padding: 0px !important
+        overflow-x: hidden
+        .title
+            padding-left: 20px !important
+            padding-top: 20px
+        .rates-container
+            //width: 280% !important
+            display: flex
+            overflow-x: auto
+            white-space: nowrap
+            flex-wrap: nowrap
+            -webkit-overflow-scrolling: touch
+            padding: 0 20px
+            ::-webkit-scrollbar 
+                display: none
+            .rate-item
+                //width: calc(50% - 5px)
+                flex: 0 0 90%
+                &:not(:first-child)
+                    margin-left: 20px
+

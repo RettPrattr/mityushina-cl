@@ -1,0 +1,239 @@
+/// FOR STORY-6
+.fadeSD
+    z-index: -1000 !important
+
+    
+.svgBlock
+    overflow: visible
+    // padding: 50px 0 0 0 !important
+    position: absolute
+    top: 60px
+    padding: 0px !important
+    height: 650px !important
+    #svg2
+        overflow: hidden
+        position: relative
+        width: 100vw
+        height: 650px !important
+        // margin: 10vw 10vw 10vw 15vw
+        // transform: scale(1.4)
+        img, svg
+            overflow: visible
+        & > *
+            position: absolute
+        #el1
+            // width: 463px
+            // height: 75px
+            left: -127px
+            bottom: 241px
+            z-index: 3
+        #el2
+            // width: 120px
+            // height: 202px
+            left: 195px
+            bottom: 149px
+            z-index: 3
+        #el3
+            width: 85%
+            height: 380px
+            left: 213px
+            bottom: 100px
+            z-index: 3
+
+        .personImage
+            height: 500px 
+            z-index: -1 
+
+        #imgStory1
+            width: 300px 
+            height: 500px 
+            top: 0 
+            left: 0 
+            margin-left: 8.4% 
+            z-index: 1 
+
+
+/// FOR HEROSECTION
+
+.svgBlock2
+    #not-desk
+        display: block !important
+    #desk
+        display: none !important
+    .logo-container
+        width: 120px !important
+        height: 120px !important
+    .heroLineLogo
+        left: 50.1% 
+        top: 200px 
+        width: 120px  !important 
+        height: 120px  !important
+        img
+            width: 120px  !important
+            height: 120px  !important
+    #svg1
+
+        img
+            width: 30%
+
+
+/// FOR PUBLICATIONS
+
+.svgBlock3
+    overflow: visible
+    padding: 50px 0 0 0 !important
+    position: absolute
+    top: 0px
+    &.mobSVG
+        width: 50% !important
+    #svg3Mob
+        display: none !important
+    #svg3, #svg3Mob
+        overflow: visible
+        position: relative
+        width: 226px
+        height: 304px
+        margin: 10vw 10vw 10vw 16.5vw
+        // transform: scale(1.4)
+        img, svg
+            overflow: visible
+        & > *
+            position: absolute
+        #l1
+            width: 463px
+            height: 75px
+            left: -361px
+            bottom: -29px
+        #l2
+            width: 120px
+            height: 202px
+            bottom: -1px
+            left: 101px
+            z-index: 3
+        #l3
+            width: 36px
+            height: 9px
+            left: 0px
+            top: 70px
+            z-index: 3
+        #l4
+            width: 537px
+            height: 210px
+            left: -72px
+            top: -31px
+            z-index: 0
+        #l5
+            width: 640px
+            height: 240px
+            left: 560px
+            top: -180px
+        #logo
+            width: 173px
+            height: 174px
+            left: 430px
+            top: -20px
+        #img1
+            width: 226px
+            height: 304px
+
+@media (min-width: 1500px)
+
+    .svgBlock2
+        #not-desk
+            display: none !important
+        #desk
+            display: block !important
+        .heroLineLogo
+            left: 48.6% !important 
+
+    .svgBlock
+        height: 800px !important
+        #svg2
+            height: 800px !important
+        #el1
+            left: -448px !important
+            bottom: 360px !important
+            width: 60% !important
+            height: 150px !important
+        #el2
+            width: 100% !important
+            height: 375px !important
+            left: -496px !important
+            bottom: 157px !important
+        #el3
+            width: 100% !important
+            height: 500px !important
+            left: 225px !important
+            bottom: 118px !important
+        #imgStory1
+            margin-left: 11.3% !important
+            height: 600px !important
+            width: 350px !important
+ 
+    .svgBlock3
+        overflow: visible
+        padding: 150px 0 !important
+        #svg3, #svg3Mob
+            overflow: visible
+            position: relative
+            width: 226px
+            height: 304px
+            margin: 10vw 10vw 10vw 22vw
+            transform: scale(1.4)
+
+
+    // .svgBlock2
+    //     .heroLineLogo
+    //         width: 130px !important 
+    //         height: 130px !important 
+    //         img
+    //             width: 130px !important 
+    //             height: 130px !important 
+
+
+
+@media (max-width: 800px)
+    .svgBlock
+        left: 0 !important
+        height: 300px !important
+        #svg2
+            height: 300px !important
+
+        #imgStory1
+            margin-left: 20px !important
+            width: 140px !important
+            height: 225px !important
+
+        #el1
+            left: 15px !important
+            bottom: 130px !important
+        #el2
+            left: 40px !important
+            bottom: 74px !important
+        #el3
+            left: 40px !important
+            bottom: -63px !important
+            @media (min-width: 400px)
+                bottom: -60px !important
+            
+
+
+    .svgBlock3
+        top: 240px !important
+        margin: 0 !important
+        #lMob
+
+            z-index: 3 !important
+            left: -30px !important
+            bottom: 20px !important
+        #svg3
+            display: none !important
+        #svg3Mob
+            display: block !important
+        #svg3, #svg3Mob
+            margin: 0 !important
+        #img1Mob
+            margin-top: 20px !important
+            margin-left: 30px !important
+            width: 180px !important
+            height: 250px !important

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_blocks_map_blocks",
+  "info": {
+    "displayName": "MapBlock"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

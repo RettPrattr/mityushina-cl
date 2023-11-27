@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_common_characteristics_cards",
+  "info": {
+    "displayName": "CharacteristicsCards"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

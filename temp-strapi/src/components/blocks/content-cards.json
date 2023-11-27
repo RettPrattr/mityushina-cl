@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_content_cards",
+  "info": {
+    "displayName": "ContentCards",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contentCards": {
+      "displayName": "ContentCards",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.content-cards"
+    },
+    "type": {
+      "type": "integer"
+    }
+  }
+}

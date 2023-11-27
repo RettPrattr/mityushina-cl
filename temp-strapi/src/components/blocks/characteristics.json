@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blocks_characteristics",
+  "info": {
+    "displayName": "Characteristics"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "characteristicsCards": {
+      "displayName": "CharacteristicsCards",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.characteristics-cards"
+    }
+  }
+}
